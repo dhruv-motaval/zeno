@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO SETTINGS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+</head>
+<body>
+<form action="/<%=setting._id%>/edit?_method=PUT" method="POST">
+    <center>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">               
+            <div class="card-body">
+              <h4 class="card-title">UPDATE SETTING FOR <%=setting.name%></h4><br>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="setting[name]" value="<%=setting.name%>"><br>
+
+        <label for="team">Team</label><br>
+        <input type="text" id="team" name="setting[team]" value="<%=setting.team%>"><br>
+
+        <label for="mouse">Mouse</label><br>
+        <input type="text" id="mouse" name="setting[mouse]" value="<%=setting.mouse%>"><br>
+
+        <label for="hz">Mouse-Hz</label><br>
+        <input type="text" id="hz" name="setting[hz]" value="<%=setting.hz%>"><br>
+
+        <label for="dpi">Dpi</label><br>
+        <input type="text" id="dpi" name="setting[dpi]" value="<%=setting.dpi%>"><br>
+
+        <label for="sensitivity">Sensitivity</label><br>
+        <input type="text" id="sensitivity" name="setting[sensitivity]" value="<%=setting.sensitivity%>"><br>
+
+        <label for="edpi">Edpi</label><br>
+        <input type="text" id="edpi" name="setting[edpi]" value="<%=setting.edpi%>"><br>
+
+        <label for="ads">ADS</label><br>
+        <input type="text" id="ads" name="setting[ads]" value="<%=setting.ads%>"><br>
+
+        <label for="monitor">Monitor</label><br>
+        <input type="text" id="monitor" name="setting[monitor]" value="<%=setting.monitor%>"><br>
+
+        <label for="refresh">Refresh-rate</label><br>
+        <input type="text" id="refresh" name="setting[refresh]" value="<%=setting.refresh%>"><br>
+
+        <label for="gpu">GPU</label><br>
+        <input type="text" id="gpu" name="setting[gpu]" value="<%=setting.gpu%>"><br>
+
+        <label for="resolution">Resolution</label><br>
+        <input type="text" id="resolution" name="setting[resolution]" value="<%=setting.resolution%>"><br>
+
+        <label for="mousepad">Mousepad</label><br>
+        <input type="text" id="mousepad" name="setting[mousepad]" value="<%=setting.mousepad%>"><br>
+
+        <label for="keyboard">Keyboard</label><br>
+        <input type="text" id="keyboard" name="setting[keyboard]" value="<%=setting.keyboard%>"><br>
+
+        <label for="headset">Headset</label><br>
+        <input type="text" id="headset" name="setting[headset]" value="<%=setting.headset%>"><br><br>
+
+
+        <input type="submit" class="btn btn-success"><br>
+    </div>
+</div>
+</center>
+</form>
+<a href="/setting">GOBACK-></a>
+</body>

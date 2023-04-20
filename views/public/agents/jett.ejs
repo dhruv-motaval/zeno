@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Zeno : Jett</title>
+  <link rel="stylesheet" href="jett.css">
+</head>
+
+<body>
+
+
+  <main>
+    <div class="container py-4">
+
+      <header class="p-3 mb-3 border-bottom">
+        <%- include('../../publicHeader'); %>
+      </header>
+
+      <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/agents/Agents.html">Agents</a></li>
+
+          <li class="breadcrumb-item active" aria-current="page">Jett</li>
+        </ol>
+      </div>
+      <div class="p-2 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h2 class="display-5 fw-bold">Agent : Jett</h2>
+        </div>
+
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3 border bg-light"><img
+                src="https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/jett_portrait.png"></div>
+          </div>
+          <div class="col">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <strong>Biography</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <table class="table table-dark"">
+                      <tr>
+                        <td><strong>Real Name</strong> </td>
+                        <td>Joon-Hee (준희)</a></td>
+                      </tr>
+                     
+                      <tr>
+                        <td><strong>Origin</strong> </td>
+                        <td>South Korea</a></td>
+                      </tr>
+                     
+                      <tr>
+                        <td><strong>Race</strong> </td>
+                        <td>Radiant</a></td>
+                      </tr>
+                     
+                      <tr>
+                        <td><strong>Gender</strong> </td>
+                        <td>&female; Female</a></td>
+                      </tr>
+                     
+                      <tr>
+                        <td><strong>Affiliation(s)</strong> </td>
+                        <td>Valorant Protocol</a></td>
+                      </tr>
+                     
+                    </table> 
+                  </div>
+                </div>
+              </div>
+              <div class=" accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          <strong>Game Details</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <table class="table table-dark"">
+                            <tr>
+                              <td><strong>Role</strong> </td>
+                              <td><img
+                              src="
+                            https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt213441880cf2cdf5/5eaa06851b51e36d7c1b61d4/Duelist.png"
+                            height="25" width="25"> Duelist</td>
+                            </tr>
+
+                            <tr>
+                              <td><strong>Passive Ability</strong> </td>
+                              <td><img
+                                  src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png"
+                                  height="36" width="36"> Drift</a></td>
+                            </tr>
+
+                            <tr>
+                              <td><strong>Basic Abilities</strong> </td>
+                              <td> 1. <img
+                                  src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png"
+                                  height="36" width="36"> Cloudburst
+                                <p></p>
+                                <p> 2. <img
+                                    src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability1/displayicon.png"
+                                    height="36" width="36"> Updraft</p>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td><strong>Signature Abilities</strong> </td>
+                              <td><img
+                                  src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png"
+                                  height="36" width="36"> Tailwind (Dash)</a></td>
+                            </tr>
+
+                            <tr>
+                              <td><strong>Ultimate Ability</strong> </td>
+                              <td><img
+                                  src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ultimate/displayicon.png"
+                                  height="36" width="36" alt=""> Blade Storm</a></td>
+                            </tr>
+                            <tr>
+                              <td><strong>Ult. Points</strong> </td>
+                              <td> ♦♦♦♦♦♦♦ 7</a></td>
+                            </tr>
+
+                          </table>
+
+                        </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item fw-bold">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree fw-bold">
+                        Out-of-Universe
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        <table class="table table-dark"">
+                          <tr>
+                            <td><strong>Codenames</strong> </td>
+                            <td>Hawk
+                              <p>Woosh</p>
+                              <p>Wushu</p>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td><strong>Added</strong> </td>
+                            <td>June 2, 2020 (launch)</a></td>
+                          </tr>
+                         
+                          <tr>
+                            <td><strong>Voice Actor</strong> </td>
+                            <td>Shannon Williams</td>
+                          </tr>
+                         
+                        </table> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <p class=" display-5 fw-bold">Profile</p>
+                          <hr align="left" width="50%" color="black">
+                          <p class="display-6 fw-bold">Biography</p>
+                          <p class="col-md-8 fs-6">Jett, whose real name is Joon-Hee (Hangul: 준희), hails from South
+                            Korea, with possible links to the Insa-dong neighborhood in Seoul.[1] As a chef in her early
+                            life, she was involved in an incident relating to her wind-like radiant powers.
+                          </p>
+                          <p class="col-md-8 fs-6">Later on, she would be recruited by the VALORANT Protocol to become
+                            its tenth agent.
+                          </p>
+                          <h2>
+                            <p class="display-6 fw-bold">Personality</p>
+                          </h2>
+                          <p class="col-md-8 fs-6">
+                            The wind is commonly known for being cool, but Jett is an aggressive agent who has a
+                            distinctive, sarcastic personality. Jett also has a cheeky, childish "in-your-face"
+                            attitude, seen commonly giving insults for feats she makes on the team and is always
+                            spouting her sheer amount of arrogance. Her self-confidence may feel as if she is
+                            disregarding her comrades' safety, but she has recognized that it is best to play with a
+                            team, albeit with some reluctance. She does show a much more friendly personality towards
+                            teammates.</p>
+                          <p class="col-md-8 fs-6">
+                            Her youth is apparent as she animatedly chats with her allies, and she can sometimes
+                            spitball whenever she's excited to share ideas.</p>
+                          <p class="display-6 fw-bold">
+                            Appearance
+                          </p>
+                          <p class="col-md-8 fs-6">
+                            Jett is a fair-skinned, short girl, being the smallest of the VALORANT agents prior.She has
+                            white hair, which she ties in a bun on the back. Her bangs are rather long and remain stably
+                            locked. Her eyes are a shade of blue, and she looks like she wears eyeliner. Jett's armor
+                            has multiple symbols associated with wind such as the swirl on her right shoulder pad. Her
+                            blue, sleeveless jacket features a stylized depiction of the Tailwind logo through some
+                            clouds. The icons on the backs of her gloves is the same icon on the lip of her hoodie and
+                            bottom edge of her crop top. A sash and two kunai can be seen along her right hip belt.
+                            Jett's shoes have a triangular whirl on the outer side of the heel and a smooth "V" stamped
+                            on the back heel.
+                          </p>
+                          <p class="col-md-8 fs-6">When using her Radiant powers to manipulate the wind, whorls of white
+                            air wrap around Jett's arms as markings which can seen in game and in the cinematics. In
+                            "Retake," Jett had an alternative version of her outfit with long sleeves so as to operate
+                            in Icebox's cold environment, however this is currently not a feature in-game.</p>
+                          <p class="display-6 fw-bold">Quotes</p>
+                          <hr align="left" width="50%" color="black">
+
+
+                          <div class="card mb-3 align-items-center" style="max-width: 750px;">
+                            <div class="card-body">
+                              <figure>
+
+                                <blockquote class="blockquote">
+                                  <p><strong>
+                                      <h2>"Looks like I was the stronger one."</h2>
+
+
+                                    </strong></p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer fs-4">
+                                  Jett
+
+                                </figcaption>
+                              </figure>
+                            </div>
+                          </div>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p class="display-6 fw-bold">Abilities</p>
+                          <hr align="left" width="50%" color="black">
+                          <p class="display-6 fw-bold">Passive</p>
+                          <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="card mb-3 text-light bg-dark" style="max-width: 800px;">
+
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <img
+                                    src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png"
+                                    width="75%" height="100%" class="img-fluid rounded-start" alt="Drift">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title fw-bold"><span class="badge bg-secondary">Space</span> DRIFT
+                                    </h5>
+                                    <p class="card-text">Holding the jump button while falling allows you to glide
+                                      through the air.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                      <small class="fw-bold">Default</small>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="display-6 fw-bold">Basic</p>
+                          <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="card mb-3 text-light bg-dark" style="max-width: 800px;">
+
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <p></p>
+                                  <img
+                                    src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png"
+                                    width="75%" height="100%" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title fw-bold"><span class="badge bg-secondary"> C </span>
+                                      CLOUDBURST</h5>
+                                    <p class="card-text">INSTANTLY throw a projectile that expands into a brief
+                                      vision-blocking cloud on impact with a surface. HOLD the ability key to curve the
+                                      smoke in the direction of your crosshair.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                      <small class="fw-bold">Uses : 2 ┃ <a>Creads : 200</a>
+                                        ┃ <a>Duration : 4.5 s</a> </small>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="card mb-3 text-light bg-dark" style="max-width: 800px;">
+
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <p></p>
+                                  <img
+                                    src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability1/displayicon.png"
+                                    width="75%" height="100%" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <p></p>
+                                    <h5 class="card-title fw-bold"><span class="badge bg-secondary">Q</span> Updraft
+                                    </h5>
+                                    <p class="card-text">INSTANTLY propel Jett high into the air.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                      <small class="fw-bold ">Uses : 2 ┃ <a><text>Creds :</text>>
+                                          150</a></small>
+
+                                    </div>
+
+                                  </div>
+
+                                </div>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="display-6 fw-bold">Signature</p>
+                          <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="card mb-3 text-light bg-dark" style="max-width: 800px;">
+
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <p></p>
+                                  <img
+                                    src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png"
+                                    width="75%" height="100%" style="margin-left: 1rem" class="img-fluid rounded-start"
+                                    alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title fw-bold"><span class="badge bg-secondary">E</span> TAILWIND
+                                    </h5>
+                                    <p class="card-text">INSTANTLY propel Jett in the direction she is moving. If Jett
+                                      is standing still, she will propel forward.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                      <small class=" fw-bold">Uses : 1 ┃ Free ┃ <a><text>CoolDown</text> 2
+                                          Kill Recharge</a> </small>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="display-6 fw-bold">Ultimate</p>
+                          <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="card mb-3 text-light bg-dark" style="max-width: 800px;">
+
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <p></p>
+                                  <img
+                                    src="https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ultimate/displayicon.png"
+                                    width="75%" height="100%" style="margin-left: 1rem" class="img-fluid rounded-start"
+                                    alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title fw-bold"><span class="badge bg-secondary">X</span> BLADE STORM
+                                    </h5>
+                                    <p class="card-text">EQUIP a set of highly accurate throwing knives. FIRE to throw a
+                                      single knife and recharge knives on a kill. ALTERNATE FIRE to throw all remaining
+                                      daggers but does not recharge on a kill.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                      <small class=" fw-bold">♦♦♦♦♦♦♦ 7 points ┃ <a>Damage : 150 Head, 50 Body + Legs
+                                        </a> </small>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <p></p>
+                          <p></p>
+
+                      </div>
+
+
+                    </div>
+
+
+                  </div>
+
+                  <footer class="pt-3 mt-4 text-muted border-top">
+                    2022 &copy; ZENO
+                  </footer>
+                </div>
+  </main>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

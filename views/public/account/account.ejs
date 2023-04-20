@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div class="container py-4">
+
+          <header class="p-3 mb-3 border-bottom">
+            <%- include('../../publicHeader'); %>
+            </header>
+  
+<center>
+           <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header"><h3>PLAYER DETAILS</h3></div>
+            <div class="card-body">
+             
+              <% accounts.forEach(function(account){ %>
+            
+                   
+                   <h6>REGION:<%= account.data.region %></h6>  
+                      
+                      <img src="<%= account.data.card.large %>" alt="Girl in a jacket" width="100" height="200">
+                      <h6>RIOT ID:<%= account.data.name %>#<%= account.data.tag %></h6>
+                      <h6>RANK:<%= account.data.currenttierpatched %></h6>  
+                       <h6>ELO POINTS:<%= account.data.elo %></h6> 
+                       
+              <% }) %>
+          
+            </center>
+              
+            </div>
+          </div>
+
+      
+  
+    
+ 
+  
+
+
+        
+    <footer class="pt-3 mt-4 text-muted border-top">
+        2022 &copy;  ZENO
+    </footer>
+</div>
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+</body>
+</html>
