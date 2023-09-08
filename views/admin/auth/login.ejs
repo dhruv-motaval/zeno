@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #12f8ad;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.main {
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+  background-color: #2a2b38;
+  padding: 100px 20px;
+  border-radius: 10px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+}
+
+.main > form > input {
+  width: 95%;
+  padding: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0;
+  margin: 10px 5px;
+  border-radius: 8px;
+}
+
+.main > form > button {
+  background-color: #12f8ad;
+  padding: 15px;
+  width: 95%;
+  border: none;
+  color: #2a2b38;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main > form > input:focus,
+.main > form > button:focus {
+  outline: none;
+}
+</style>
+    
+  </head>
+  <body>
+    <div class="main">
+      <h1>SIGN IN</h1>
+      <% if (messages) { %>
+      <p><font color="white"><%= messages.error %></font></p>
+      <% } %>
+      <form action="/login" method="POST">
+        <input
+          type="name"
+          name="name"
+          placeholder="USERNAME"
+        />
+        <input type="password" name="password" placeholder="PASSWORD" />
+        <button><b><font color="white">SIGN IN</font></b></button>
+      </form>
+      <br>
+      <br>
+      <h5><font color="white">Create account!</font><a href="/register"> <font color="#12f8ad">SIGN UP</font> </a></h5>
+    </div>
+  </body>
+</html>
