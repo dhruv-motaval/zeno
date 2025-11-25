@@ -1,59 +1,120 @@
-# Zeno – Valorant Stats Tracker
+# ZENO – Valorant Stats & Guides Web Application
 
-Zeno is a full-stack Valorant stats tracker built with **Node.js**, **Express**, **EJS**, and **MongoDB**.  
-It fetches real-time player stats from the Valorant API and renders them in a clean, responsive interface.
+Zeno is a full-stack Valorant web application built with **Node.js**, **Express**, **EJS**, and **MongoDB**.  
+It provides real-time player statistics, agent guides, weapon information, map insights, and pro-player settings — all in a clean, responsive interface.
 
-This project demonstrates backend development, API integration, templating (EJS), and basic database usage — suitable for SDE internship–level software engineering.
+This project demonstrates backend engineering, authentication, API integration, templating (EJS), database modeling, and structured full-stack development suitable for **SDE Intern positions**.
 
 ---
 
 ## 🚀 Features
 
-- Search Valorant players by **Riot ID + Tagline**
-- Fetch and display:
-  - Player profile details
+### 🎮 Player Statistics
+- Search players by **Riot ID + Tagline**
+- View:
+  - Player card & profile info
   - Match history
-  - Agents performance
-  - Basic competitive stats
-- Clean UI using **Bootstrap + EJS templates**
-- Modular structure with **middlewares**, **models**, and **views**
-- Secure configuration using environment variables
+  - Agent performance
+  - Competitive rank & stats
+
+### 🏆 Leaderboard
+- Global/Regional leaderboard page
+- Displays top-performing players
+- Clean UI optimized for quick browsing
+
+### 🗺 Maps Section
+- Detailed Valorant maps pages
+- Location callouts & layout images
+
+### 🔫 Weapons Section
+- Weapon stats (damage, fire rate, recoil)
+- Visual previews
+
+### 📘 Guides Section
+- Agent guides
+- Ability explanations
+- Lineups (example: Brimstone lineups)
+- Tips for beginners & intermediate players
+
+### ⚙️ Pro Player Settings
+- Professional sensitivity
+- DPI, keybinds, crosshair codes
+
+### 🔐 Authentication (Basic)
+- Middleware structure ready for auth handling
+- Passport configuration included
+
+### 📦 Modular Architecture
+- `middlewares/`  
+- `models/`  
+- `views/public/...`  
+- `github/workflows/` CI structure
+
+Clean, scalable project layout following proper MVC patterns.
+
+### 🔑 Environment Variable Support
+- `.env.example` included
+- Secrets are safely ignored via `.gitignore`
 
 ---
 
 ## 🛠 Tech Stack
 
-**Backend:**  
+### **Backend**
 - Node.js  
 - Express.js  
 
-**Frontend:**  
+### **Frontend**
 - EJS templating  
 - Bootstrap 5  
 
-**Database:**  
+### **Database**
 - MongoDB  
-- Mongoose  
+- Mongoose models
 
-**Other:**  
-- Axios (API calls)  
-- dotenv (environment configuration)
+### **Other**
+- Axios (API requests)
+- Passport.js (authentication config)
+- dotenv (environment variables)
+- GitHub Workflows (CI)
 
 ---
 
-## 📂 Project Structure
-```bash
+## 📁 Project Structure
+
+```text
 zeno/
-├── app.js # Main Express server
-├── passport-config.js # Passport setup
-├── middlewares/ # Middleware handlers
-├── models/ # Mongoose models
-├── views/ # EJS templates (UI pages)
-├── .env.example # Template for environment variables
-├── .gitignore
+├── app.js                      # Main Express server
+├── passport-config.js          # Passport setup
+│
+├── middlewares/
+│   ├── auth.js                 # Authentication middleware
+│   └── ...                     # Other middleware handlers
+│
+├── models/
+│   ├── User.js                 # User model
+│   ├── Setting.js              # Pro settings model
+│   ├── Leaderboard.js          # Leaderboard entry model
+│   └── ...                     # Other mongoose models
+│
+├── views/
+│   ├── public/
+│   │   ├── maps/               # Map pages
+│   │   ├── weapons/            # Weapon pages
+│   │   ├── player/             # Player stats pages
+│   │   ├── guides/             # Agent guides & tips
+│   │   ├── leaderboard/        # Leaderboard UI
+│   │   └── assets/             # Images & static data
+│   ├── partials/               # Reusable components
+│   └── layouts/                # Page templates
+│
+├── .github/
+│   └── workflows/              # CI workflow configurations
+│
+├── .env.example                # Environment variable template
+├── .gitignore                  
 ├── package.json
 └── README.md
-```
 
 ## ⚙️ Setup Instructions
 
