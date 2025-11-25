@@ -42,7 +42,7 @@ This project demonstrates backend development, API integration, templating (EJS)
 ---
 
 ## 📂 Project Structure
-
+```bash
 zeno/
 ├── app.js # Main Express server
 ├── passport-config.js # Passport setup
@@ -53,7 +53,7 @@ zeno/
 ├── .gitignore
 ├── package.json
 └── README.md
-
+```
 
 ## ⚙️ Setup Instructions
 
