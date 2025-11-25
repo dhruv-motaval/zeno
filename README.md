@@ -62,11 +62,11 @@ zeno/
 git clone https://github.com/dhruv-motaval/zeno.git
 cd zeno
 ```
-2. Install dependencies
+### 2. Install dependencies
 ```bash
 npm install
 ```
-3. Create your .env file
+### 3. Create your .env file
 
 Use the provided .env.example as a guide.
 ```
@@ -75,15 +75,14 @@ SESSION_SECRET=your_random_session_secret
 VALORANT_API_KEY=your_valorant_api_key_here
 PORT=4000
 ```
-4. Start the server
+### 4. Start the server
 ```bash
 npm start
 ```
-```
 Zeno will run at:
-
+```bash
 http://localhost:4000
-
+```
 🔧 Environment Variables
 
 Your .env file must contain:
