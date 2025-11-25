@@ -86,7 +86,7 @@ http://localhost:4000
 🔧 Environment Variables
 
 Your .env file must contain:
-
+```
 Key	Description
 MONGODB_URI	MongoDB connection string
 SESSION_SECRET	Secret key for sessions/auth
