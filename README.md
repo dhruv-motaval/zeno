@@ -92,6 +92,5 @@ MONGODB_URI	MongoDB connection string
 SESSION_SECRET	Secret key for sessions/auth
 VALORANT_API_KEY	API key/token used to fetch Valorant stats
 PORT	Port number (default: 4000)
-
-Refer to .env.example for placeholders.
 ```
+Refer to .env.example for placeholders.
